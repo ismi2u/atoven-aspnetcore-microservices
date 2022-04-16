@@ -1,0 +1,12 @@
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\bin\Debug\net6.0\VendorRegistration.Domain.deps.json
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\bin\Debug\net6.0\VendorRegistration.Domain.dll
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\bin\Debug\net6.0\VendorRegistration.Domain.pdb
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\VendorRegistration.Domain.csproj.AssemblyReference.cache
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\VendorRegistration.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\VendorRegistration.Domain.AssemblyInfoInputs.cache
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\VendorRegistration.Domain.AssemblyInfo.cs
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\VendorRegistration.Domain.csproj.CoreCompileInputs.cache
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\VendorRegistration.Domain.dll
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\refint\VendorRegistration.Domain.dll
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\VendorRegistration.Domain.pdb
+C:\Users\00711O744\source\repos\src\services\VendorRegistration\VendorRegistration.Domain\obj\Debug\net6.0\ref\VendorRegistration.Domain.dll
