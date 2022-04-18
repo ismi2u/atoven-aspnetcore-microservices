@@ -19,6 +19,20 @@ namespace VendorRegistration.Infrastructure.Persistence
 
         public DbSet<Company> Companies { get; set; }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            modelBuilder.Entity<Company>().HasKey( x=> x.Id );
+            modelBuilder.Entity<Company>().ToTable("Companies");
+            modelBuilder.Entity<Company>().Property(x=> x.CompanyName).IsRequired();
+            modelBuilder.Entity<Company>().Property(x => x.CommercialRegistrationNo).IsRequired();
+            
+
+            base.OnModelCreating(modelBuilder);
+        }
+
+
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
 

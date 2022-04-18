@@ -17,6 +17,8 @@ namespace VendorRegistration.Infrastructure.Persistence
             if (!companyContext.Companies.Any())
             {
                 companyContext.Companies.AddRange(GetPreconfiguredCompanies());
+
+                await companyContext.SaveChangesAsync();
             }
         }
 
@@ -30,11 +32,8 @@ namespace VendorRegistration.Infrastructure.Persistence
                 Id = Guid.NewGuid(),
                 CompanyName = "GAJ(MIDDLEEAST)ARCHITECTURAL&CIVIL",
                 CommercialRegistrationNo = "CRNO100110",
-                Language = "En",
-                CreatedBy = "Application",
-                CreatedDate = DateTime.Now,
-                LastModifiedBy = "",
-                LastModifiedDate = DateTime.Now
+                Language = "En"
+               
                },
 
 
@@ -43,11 +42,7 @@ namespace VendorRegistration.Infrastructure.Persistence
                     Id = Guid.NewGuid(),
                     CompanyName = "TESTCOMPANY2",
                     CommercialRegistrationNo = "CRNO100111",
-                    Language = "Ar",
-                    CreatedBy = "Application",
-                    CreatedDate = DateTime.Now,
-                    LastModifiedBy = "",
-                    LastModifiedDate = DateTime.Now
+                    Language = "Ar"
                 }
         };
 
