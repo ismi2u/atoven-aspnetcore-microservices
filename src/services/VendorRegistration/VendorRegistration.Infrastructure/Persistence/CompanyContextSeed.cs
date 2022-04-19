@@ -11,7 +11,7 @@ namespace VendorRegistration.Infrastructure.Persistence
     public class CompanyContextSeed
     {
 
-        public static async Task SeedAsync(CompanyContext companyContext, ILogger<CompanyContext> logger)
+        public static async Task SeedAsync(CompanyContext companyContext, ILogger<CompanyContextSeed> logger)
         {
 
             if (!companyContext.Companies.Any())
@@ -32,7 +32,8 @@ namespace VendorRegistration.Infrastructure.Persistence
                 Id = Guid.NewGuid(),
                 CompanyName = "GAJ(MIDDLEEAST)ARCHITECTURAL&CIVIL",
                 CommercialRegistrationNo = "CRNO100110",
-                Language = "En"
+                Language = "En",
+                Email = "ismailkhanf@gmail.com"
                
                },
 
@@ -42,7 +43,8 @@ namespace VendorRegistration.Infrastructure.Persistence
                     Id = Guid.NewGuid(),
                     CompanyName = "TESTCOMPANY2",
                     CommercialRegistrationNo = "CRNO100111",
-                    Language = "Ar"
+                    Language = "Ar",
+                    Email = "ismailkhanf@gmail.com"
                 }
         };
 

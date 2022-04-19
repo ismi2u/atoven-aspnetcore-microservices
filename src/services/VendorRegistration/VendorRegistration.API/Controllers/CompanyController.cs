@@ -57,7 +57,7 @@ namespace VendorRegistration.API.Controllers
         public async Task<ActionResult> UpdateCompany([FromBody] UpdateCompanyCommand command)
         {
 
-            var result = _mediator.Send(command);
+            var result =  _mediator.Send(command);
             return NoContent();
         }
 

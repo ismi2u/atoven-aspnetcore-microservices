@@ -29,8 +29,8 @@ namespace VendorRegistration.Infrastructure.Mail
         }
 
         public async Task<bool> SendEmailAsync(Email email)
-        {
-            var apiKey = "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";
+        {// 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
+            var apiKey = " ";
             var client = new SendGridClient(_emailSettings.ApiKey);
             var from = new EmailAddress
             {

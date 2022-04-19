@@ -1,3 +1,9 @@
+using VendorRegistration.API.Extensions;
+using VendorRegistration.Application;
+using VendorRegistration.Infrastructure;
+using VendorRegistration.Infrastructure.Persistence;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,9 +13,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddScoped<IApplicationBuilder, ApplicationBuilder>();
+builder.Services.AddApplicationServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
 
 var app = builder.Build();
+app.MigrateDatabase<CompanyContext>((context, services) =>
+{
+    var logger = services.GetService<ILogger<CompanyContextSeed>>();
+
+    CompanyContextSeed.SeedAsync(context, logger).Wait();
+
+});
+app.Run();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

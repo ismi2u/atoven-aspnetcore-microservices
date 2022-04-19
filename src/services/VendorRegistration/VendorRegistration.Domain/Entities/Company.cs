@@ -18,6 +18,8 @@ namespace VendorRegistration.Domain.Entities
 
         public string Language { get; set; }
 
+        public string Email { get; set; }
+
 
         //[Column(TypeName = "varchar(100)")]
         //public string Country { get; set; }
